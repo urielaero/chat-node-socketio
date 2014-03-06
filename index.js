@@ -19,9 +19,13 @@ io.sockets.on('connection',function(socket){
 	});
 });
 
-//server http
-var connect = require('connect');
-connect.createServer(
-	connect.static(__dirname+'/templates/');
-	console.log('http server up');
-).listen(8080);
+//Server http con express
+var express = require('express'),
+app = express();
+app.get('/',function(req,res){
+	app.use(express.static(__dirname+'/templates/'));
+	res.sendfile(__dirname+'/templates/index.html');
+});
+
+console.log('http server up');
+app.listen(8080);
