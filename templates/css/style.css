@@ -1,0 +1,34 @@
+#container {
+  margin: 10px 0px 0px 10px;
+    padding: 10px;
+    }
+
+    #messages-container {
+      float: left;
+        border: 1px solid #CCCCCC;
+	  width: 800px;
+	    height: 300px;
+	      overflow: auto;
+	      }
+
+	      #users {
+	        float: left;
+		  margin-left: 10px;
+		    border: 1px solid #CCC;
+		      overflow: auto;
+		        height: 300px;
+			  width: 200px;
+			  }
+
+			  .clear {
+			    clear: both;
+			    }
+
+			    #msg-input {
+			      margin-top: 20px;
+			      }
+
+			      #msg-input input {
+			        width: 800px;
+				  height: 30px;
+				  }

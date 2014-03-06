@@ -1,0 +1,15 @@
+{
+  "name": "chat",
+  "version": "0.0.0",
+  "description": "ejemplo de un chat con socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "uriel",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "socket.io": "~0.9.16",
+    "connect": "~2.13.0"
+  }
+}
